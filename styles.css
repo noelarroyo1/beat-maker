@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: linear-gradient(#fe75fe, #7a04eb, #201070);
+}
+
+.snare-pad {
+  background: linear-gradient(#ff00a0, #ff124f, #f55532);
+}
+
+.hihat-pad {
+  background: linear-gradient(#89e3f6, #4dc2be, #195545);
+}
+
+.kick-pad.active {
+  background: #2b1694;
+}
+
+.snare-pad.active {
+  background: #ff6c4a;
+}
+
+.hihat-pad.active {
+  background: #26866d;
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2.5rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: #2e2d2b;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  background: #2e2d2b;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
